@@ -1,0 +1,44 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+#searchInput{
+    width: 200px;
+    border-radius: 12px;
+    border: none;
+    padding: 7px;
+    position: relative;
+    z-index: 2;
+}
+#results{
+    overflow: hidden;
+}
+#results ul{
+    list-style-type: none;
+    line-height:150%;
+    text-align:start;
+    border-radius: 10px;
+    width: 190px;
+    margin: 0;
+    height: 150px;
+    background-color: whitesmoke;
+    color: black;
+    opacity: 0.8;
+    transform-origin: top;
+    animation:dropBackground 0.5s ease;
+}
+
+
+@keyframes dropBackground {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
